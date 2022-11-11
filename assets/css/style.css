@@ -137,6 +137,11 @@ header {
     border: none;
   }
 }
+@media screen and (max-width: 376px) {
+  header .header_top .language_currency ul {
+    display: flex;
+  }
+}
 header .header_top .header_social {
   text-align: left;
 }
@@ -184,6 +189,11 @@ header .header_middle .search_container form {
 @media screen and (max-width: 800px) {
   header .header_middle .search_container form {
     width: 260px;
+  }
+}
+@media screen and (max-width: 376px) {
+  header .header_middle .search_container form {
+    width: 200px;
   }
 }
 header .header_middle .search_box button {
@@ -281,6 +291,9 @@ header .header_bottom .arrow {
   height: 8px;
 }
 
+.banner_area {
+  margin-bottom: 0;
+}
 .banner_area .card {
   border: 0;
   background-color: #F5F5F5;
@@ -535,8 +548,19 @@ header .header_bottom .arrow {
   padding: 7px 8px;
 }
 
+footer .widget_list.widget_categories > ul > li {
+  padding: 7px 0;
+  border-bottom: 1px solid #040404;
+}
+footer .widget_list.widget_categories > ul > li.widget_sub_categories > a::before {
+  background-color: unset;
+  color: #686D81;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 810px) {
   .footer_widgets--content {
+    margin-top: 20px;
     text-align: center;
   }
   .footer_widgets--content .images__container {
@@ -545,13 +569,37 @@ header .header_bottom .arrow {
 }
 .footer_widgets--content h4 {
   font-weight: 600;
-  font-size: 34px;
-  line-height: 43px;
+  font-size: 32px;
+  line-height: 32px;
+}
+@media screen and (max-width: 810px) {
+  .footer_widgets--content h4 {
+    margin: 10px 0;
+  }
 }
 .footer_widgets--content p {
   font-weight: 600;
   font-size: 26px;
   line-height: 31px;
+}
+@media screen and (max-width: 810px) {
+  .footer_widgets--content p {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .footer_widgets--content .images__container {
+    margin: 10px 0;
+  }
+}
+.footer_widgets--ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 810px) {
+  .footer_widgets--ul {
+    justify-content: center;
+  }
 }
 .footer_widgets--ul li {
   padding: 8px;
@@ -1256,7 +1304,7 @@ footer .section_title_border h4::after {
 
 .shipping_area--content h4 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 43px;
   /* identical to box height */
   color: #000000;
@@ -1274,6 +1322,12 @@ footer .section_title_border h4::after {
 .contact_info .icon {
   border-radius: 50%;
   background-color: #E2E9F0;
+  height: 100%;
+  padding: 7px;
+}
+.contact_info .icon img {
+  width: 30px;
+  height: 30px;
 }
 .contact_info .content {
   margin-left: 10px;
