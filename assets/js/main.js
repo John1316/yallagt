@@ -346,7 +346,7 @@
        if($card_breaks_carousel.length > 0){
             $card_breaks_carousel.slick({
             vertical: true,
-            verticalSwiping: true,
+            verticalSwiping: false,
             slidesToShow: 5,
             slidesToScroll: 1,
             arrows:true,

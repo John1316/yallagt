@@ -758,7 +758,16 @@ footer{
     }
 
 }
-
+.slider_section{
+    .single_slider{
+        @media screen and (max-width: 810px) {
+            height: 150px;
+        }
+        img{
+            height: 100%;
+        }
+    }
+}
 // shop page
 .shop_wrapper{
 
@@ -766,6 +775,7 @@ footer{
     .single_product{
         border: 3px solid #D6D4D4;
         padding: 15px;
+
     }
 
     .product_thumb{

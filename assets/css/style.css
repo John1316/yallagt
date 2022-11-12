@@ -659,6 +659,15 @@ footer .section_title_border h4::after {
   background-color: #048C04;
 }
 
+@media screen and (max-width: 810px) {
+  .slider_section .single_slider {
+    height: 150px;
+  }
+}
+.slider_section .single_slider img {
+  height: 100%;
+}
+
 .shop_wrapper .single_product {
   border: 3px solid #D6D4D4;
   padding: 15px;
