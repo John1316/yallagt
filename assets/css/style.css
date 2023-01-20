@@ -213,6 +213,10 @@ header .header_middle .header_account_area .mini_cart_wrapper a {
   width: 170px;
   height: 46px;
   justify-content: space-around;
+  border-radius: 16px;
+}
+header .header_middle .header_account_area .mini_cart_wrapper a span {
+  font-size: 16px;
 }
 header .header_middle .header_account_area .mini_cart_wrapper a:focus {
   background-color: #048C04 !important;
@@ -1347,4 +1351,21 @@ footer .section_title_border h4::after {
 }
 .contact_info .content p {
   color: #9B9B9B;
+}
+
+.browse {
+  padding: 20px 0;
+}
+.browse__card {
+  border: 2px solid #DDDCDC;
+  box-shadow: 4px 3px 14px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+.browse__card img {
+  width: 128px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */
