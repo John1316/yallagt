@@ -1,4 +1,4 @@
-$mainColor: #048C04;
+$mainColor: #1DB954;
 $secondaryColor: #000000;
 $thirdColor: #F25E3D;
 $gray: #d5d5d5;
@@ -28,7 +28,7 @@ p{
                 bottom: -16.8px;
                 width: 100%;
                 height: 2px;
-                background-color: #048C04;
+                background-color: $mainColor;
             }
         }
     }
@@ -314,7 +314,7 @@ header{
             color: #908E8E;
         }
         a{
-            background: #048C04;
+            background: $mainColor;
             border-radius: 16px;
             width: 106px;
             border: none;
@@ -322,7 +322,7 @@ header{
         }
         .available{
             &__circle{
-                background-color: #048C04;
+                background-color: $mainColor;
                 width: 8px;
                 height: 8px;
             }
@@ -755,7 +755,7 @@ footer{
                     bottom: -24.8px;
                     width: 100%;
                     height: 2.5px;
-                    background-color: #048C04;
+                    background-color: $mainColor;
                 }
             }
         }
@@ -1316,7 +1316,7 @@ footer{
     &__h5{
         font-size: 24px;
         line-height: 29px;
-        color: #048C04;
+        color: $mainColor;
         position: relative;
         &::after{
             content: "";
