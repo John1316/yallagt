@@ -126,6 +126,8 @@ p{
     }
 }
 body{
+    font-family: 'SF Pro Display';
+
     @media screen and (min-width: 1600px) {
 
     background-color: #F5F5F7;
@@ -1607,6 +1609,213 @@ footer{
             height: 70px;
             object-fit: contain;
             object-position: center;
+        }
+    }
+}
+// detailed search
+.detailedSearch{
+    &__header{
+        padding: 53px 0 30px 0;
+        &--h3{
+            font-family: 'SF Pro Display';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+            margin: 0 10px 0 0 ;
+            color: #23272A;
+        }
+        &--navs{
+            .nav-item{
+                &:first-child{
+                    .nav-link{
+
+                        border-radius: 16px 0px 0px 16px;                    
+                    }
+                }
+                &:last-child{
+                    .nav-link{
+
+                        border-radius: 0px 16px 16px 0px;
+                    }
+                }
+                .nav-link {
+                    border: 2px solid #DDDCDC;
+                    padding: 6px 24px;
+                    font-size: 20px;
+                    
+                    &.active{
+                        background: #1DB954;
+                        border: 2px solid #1DB954 !important;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        &--badge{
+            padding:42px 0 24px 0;
+            .badge{
+                background: #F5F5F5;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: #000000;
+                padding: 12px 14px;
+            }
+        }
+        &--dropdowns{
+            margin-bottom: 34px;
+            button{
+                background-color: #F5F5F5;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: #000000;
+                border: none;
+                padding:12px 36.5px ;
+            }
+        }
+        &--card{
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid #DDDCDC;
+            border-radius: 16px;
+            margin-bottom: 41px;
+            &-row{
+                .btn-category{
+                    background: #F25E3D !important;
+                    border-radius: 8px;
+                    border: none;
+                    cursor: context-menu;
+                    padding: 8px 14px;
+                    color: #fff;
+                }
+                img{
+                    border-top-left-radius: 16px;
+                    height: 100%;
+                }
+            }
+            &-header{
+                font-family: 'SF Pro Display';
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 29px;
+                /* identical to box height */
+
+                text-transform: capitalize;
+
+                color: #23272A;
+            }
+            &-prc{
+                border: 2px solid #D6D4D4;
+                border-radius: 32px;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+                text-transform: uppercase;
+
+                color: #F25E3D;
+                padding: 8px 20px;
+                width: fit-content;
+            }
+            &-price{
+                padding: 16px 24px;
+                width: 255px;
+                margin-top: 24px;
+                background: #F5F5F5;
+                border-radius: 8px;
+                &-label{
+                    font-family: 'SF Pro Display';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+                    
+                    
+                    color: #000000;
+                }
+                &-h6{
+                    font-family: 'SF Pro Display';
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 8px;
+
+                    color: #000000;
+                }
+            }
+            &-accordion{
+                button{
+                    background: #F4F2F2;
+                    padding: 14px 28px;
+                    box-shadow: none !important;
+                    border: none;
+                    border-bottom:  3px solid #EDEBEB;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-family: 'SF Pro Display';
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #23272A;
+                        &:first-child{
+                            text-decoration-line: underline;
+                        }
+                        @media screen and (max-width: 500px) {
+                            font-size: 14px;
+                        }
+
+                    }
+                }
+                .card{
+                    border: none;
+                    &-header{
+                        padding: 0;
+                    }
+                    &:last-child{
+                        border-radius: 0px 0px 16px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// choose Car Section
+.chooseCarSection{
+    background-color:#F5F5F7 ;
+    padding: 47px 41px;
+    &__content{
+        &--h5{
+            width: 40%;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 38px;
+            text-transform: capitalize;
+
+            color: #23272A;
+        }
+        &--p{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: capitalize;
+            color: #23272A;
+            margin-bottom: 32px;
         }
     }
 }

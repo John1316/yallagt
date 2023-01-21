@@ -415,9 +415,9 @@
         <section class="main_content">
             <section class="detailedSearch">
                 <div class="container-fluid">
-                    <div class="d-flex">
-                        <h3>Detailed Search</h3>
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <div class="d-flex detailedSearch__header align-items-center">
+                        <h3 class="detailedSearch__header--h3">Detailed Search</h3>
+                        <ul class="mb-0 nav nav-pills detailedSearch__header--navs" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                               <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">NEW</button>
                             </li>
@@ -429,84 +429,93 @@
                     <div class="detailedSearch__content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                <div class="dropdowns">
+                                <div class="detailedSearch__content--dropdowns">
                                     <div class="row">
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Dropdown button
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    car make
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Dropdown button
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    car years
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Dropdown button
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Body shape
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="detailedSearch__content--card">
-                                    <div class="row">
+                                <div class="detailedSearch__content--card card">
+                                    <div class="row detailedSearch__content--card-row">
                                         <div class="col-md-3">
                                             <img src="assets/img/cars/audi.png" alt="">
                                         </div>
                                         <div class="col-md-9">
-                                            <div class="row">
+                                            <div class="row justify-content-between pt-4 no-gutters">
                                                 <div class="col-md-4">
-                                                    <h4>Audi A3 2023</h4>
-                                                    <div class="bg">
-                                                        <div class="row">
+                                                    <h4 class="detailedSearch__content--card-header">Audi A3 2023</h4>
+                                                    <div class="bg detailedSearch__content--card-price">
+                                                        <div class="row no-gutters">
                                                             <div class="col-md-6">
-                                                                <div class="d-block">
+                                                                <div class="d-block detailedSearch__content--card-price-label">
                                                                     From
                                                                 </div>
-                                                                <div class="d-block">
+                                                                <h6 class="d-block detailedSearch__content--card-price-h6">
                                                                     670,000 LE
-                                                                </div>
+                                                                </h6>
                                                             </div>
                                                             <div class="col-md-6">
-                                                                <div class="d-block">
+                                                                <div class="d-block detailedSearch__content--card-price-label">
                                                                     From
                                                                 </div>
-                                                                <div class="d-block">
+                                                                <div class="d-block detailedSearch__content--card-price-h6">
                                                                     670,000 LE
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-8">
-                                                    <span  class="btn btn-primary">
+                                                <div class="col-md-2">
+                                                    <span  class="btn btn-category">
                                                         4 catergories
                                                     </span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion" id="accordionExample">
+                                    <div class="accordion detailedSearch__content--card-accordion" id="accordionExample">
                                         <div class="card">
                                           <div class="card-header" id="headingOne">
                                             <h2 class="mb-0">
-                                              <button class="btn btn-link btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Collapsible Group Item #1
+                                              <button class="btn w-100 btn-link btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <p>
+                                                    Audi A3 1.4 A/T Advanced
+                                                </p>
+                                                <p>1,250,000 LE</p>
                                               </button>
                                             </h2>
                                           </div>
@@ -521,7 +530,10 @@
                                           <div class="card-header" id="headingTwo">
                                             <h2 class="mb-0">
                                               <button class="btn btn-link btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
+                                                <p>
+                                                    Audi A3 1.4 A/T Advanced
+                                                </p>
+                                                <p>1,250,000 LE</p>
                                               </button>
                                             </h2>
                                           </div>
@@ -535,7 +547,10 @@
                                           <div class="card-header" id="headingThree">
                                             <h2 class="mb-0">
                                               <button class="btn btn-link btn-block text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Collapsible Group Item #3
+                                                <p>
+                                                    Audi A3 1.4 A/T Advanced
+                                                </p>
+                                                <p>1,250,000 LE</p>
                                               </button>
                                             </h2>
                                           </div>
@@ -548,7 +563,105 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">used</div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="detailedSearch__content--dropdowns">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    car make
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    car years
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Body shape
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detailedSearch__content--card card">
+                                    <div class="row detailedSearch__content--card-row">
+                                        <div class="col-md-3">
+                                            <img src="assets/img/cars/audi.png" alt="">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row justify-content-between pt-4 no-gutters">
+                                                <div class="col-md-8">
+                                                    <h4 class="detailedSearch__content--card-header">Audi A3 2023</h4>
+                                                    <div class="detailedSearch__content--card-prc">
+                                                        20000 LE
+                                                    </div>
+                                                    <div class="detailedSearch__content--badge row no-gutters justify-content-between">
+                                                        <span class="badge">210,000 km</span>
+                                                        <span class="badge">210,000 km</span>
+                                                        <span class="badge">210,000 km</span>
+                                                        <span class="badge">210,000 km</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button class="btn btn_favourite">
+                                                        <img src="assets/img/icon/love.png" alt="">
+                                                    </button>
+                                                    <span  class="btn btn-category">
+                                                        Best Price
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="chooseCarSection">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <img src="assets/img/service/choose_car.png" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="chooseCarSection__content">
+                                <h5 class="chooseCarSection__content--h5">
+                                    choose a car that fits up with you 
+                                </h5>
+                                <p class="chooseCarSection__content--p">
+                                    New or used? Choose make, price range or body style                                
+                                </p>
+                                <p class="chooseCarSection__content--p">
+                                    Undecided? Choose the price range and leave the rest to us.                              
+                                </p>
+                                <a class="btn btn-dark" href="service-details.html">See more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
