@@ -39,7 +39,7 @@
     
     <!-- theme Style CSS -->
     <link rel="stylesheet" href="assets/css/theme.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- custome style sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--modernizr min js here-->
@@ -409,372 +409,155 @@
         </div> 
     </header>
     <!--header area end-->
-
+    <!-- start main Content -->
     <main>
+        <!-- start fit screen section -->
         <section class="main_content">
-            <!--breadcrumbs area start-->
-            <div class="breadcrumbs_area">
-                <div class="container-fluid">   
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="breadcrumb_content">
-                                <ul>
-                                    <li><a href="index.html">
-                                        <img src="assets/img/icon/home_bread.png" alt="">
-                                    </a></li>
-                                    <li>Air Intakes</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
-            </div>
-            <!--breadcrumbs area end-->
-            <section class="section__header">
+            <section class="forms">
                 <div class="container-fluid">
-                    
-                    <div class="detailedSearch__content--dropdowns">
+                    <div class="section_title section_title_border text-left">
+                        <h2>Enter Your Car Details </h2>
+                        <hr>
+                    </div>
+                    <form action="">
                         <div class="row">
-                            <div class="col-md-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        car make
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="car_brand">Car Brand</label>
+                                    <select id="car_brand" class="form-control" type="text" name="car_brand">
+                                        <option value=""></option>
+                                    </select>
+
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        car years
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="form-group">
+                                    <label for="input">Car Model</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Body shape
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="form-group">
+                                    <label for="input">Car Year</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
                                 </div>
+                                <div class="form-group">
+                                    <label for="input">Body type</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Kilometers</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Kilometers</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Color</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Engine Capacity (cc)</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Fuel Type</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Transmission Type</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Condition</label>
+                                    <select id="input" class="form-control" type="text" name="">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">License Expiration Date</label>
+                                    <input id="input" class="form-control" type="date" name="" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">License Expiration Date</label>
+                                    <select class="js-example-basic-multiple js-states form-control" id="id_label_multiple" multiple="multiple">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </section> 
-            <!--shop  area start-->
-            <div class="shop_area shop_reverse mt-70 mb-70">
-                <div class="container-fluid">
-                    <div class="row">
-                        
-                        <div class="col-md-12">
-                            <!--shop wrapper start-->
-                            <!-- category start -->
-                            <section class="category">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <img src="assets/img/sub-categories/air-filter.png" alt="">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4>Filters</h4>
-                                        <p>The must have of your wardrobe, take a look at our different colors,
-                                            shapes and style of our collection!</p>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- category end -->
-
-                            <hr class="my-5">
-                            <!-- sub category start -->
-                            <section class="category_sub pb-70">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h5>
-                                            Subcategories
-                                        </h5>
-                                    </div>
-                                    <!-- loop start here  -->
-                                    <div class="col-md-3">
-                                        <div class="category_sub_card">
-                                            <div class="card-body">
-                                                <img src="assets/img/sub-categories/air-filter.png" alt="">
-                                            </div>
-                                            <h5 class="card-title">Air Filters</h5>
-                                        </div>
-                                    </div>
-                                    <!-- loop end here -->
-                                    <div class="col-md-3">
-                                        <div class="category_sub_card">
-                                            <div class="card-body">
-                                                <img src="assets/img/sub-categories/Ac-Filters.png" alt="">
-                                            </div>
-                                            <h5 class="card-title">Ac Filters</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="category_sub_card">
-                                            <div class="card-body">
-                                                <img src="assets/img/sub-categories/Fuel-Filter.png" alt="">
-                                            </div>
-                                            <h5 class="card-title">Fuel Filter</h5>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </section>
-                            <!-- sub category end -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="section_title section_title_border text-left">
-                                        <div class="d-flex justify-content-between">
-                                            <h2>Product categories</h2>
-                                            <form class="d-flex align-items-center" action="#">
-                                                <label for="" class="mb-0">Sort</label>
-                                                <select name="orderby" id="short" class="form-control ml-2">
-                
-                                                    <option selected value="1">Sort by average rating</option>
-                                                    <option  value="2">Sort by popularity</option>
-                                                    <option value="3">Sort by newness</option>
-                                                    <option value="4">Sort by price: low to high</option>
-                                                    <option value="5">Sort by price: high to low</option>
-                                                    <option value="6">Product Name: Z</option>
-                                                </select>
-                                            </form>
-        
-                                        </div>
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div> 
-                             <!--shop toolbar end-->
-                             <div class="row shop_wrapper">
-                                <div class="col-12">
-
-                                    <div class="product_container">  
-                                        <div class="row no-gutters">
-                                            <!-- loop starts here -->
-                                            <div class="col-lg-3 col-md-4">
-            
-                                                <article class="single_product">
-                                                    <figure>
-                                                        <div class="product_thumb">
-                                                            <a class="primary_img">
-                                                                <img src="assets/img/product/battery.png" alt=""></a>
-                                                            <div class="label_product">
-                                                                <span class="label_new">New</span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <figcaption class="product_content">
-                                                            <h6 class="brand"><a href="#">Brand: <span>Porterfield</span></a></h6>
-                                                            <h4 class="product_name"><a >Porterfield R4-S Break Pad
-                                                                Made fore korean cars</a></h4>
-                                                            <div class="price_box my-3"> 
-                                                                <span class="current_price">5,698 LE</span>
-                                                            </div>
-                                                            <h6 class="category">KIA Cerato (2013 - 2018) </h6>
-                                                            <p class="description">After-Market Assembly Brake Pad Rear Korean </p>
-                                                            <div class="addToCart mt-2">
-                                                                <button class="btn btn_favourite">
-                                                                    <img src="assets/img/icon/love.png" alt="">
-                                                                </button>
-                                                                <button class="btn btn_addToCart">
-                                                                    Add to cart
-                                                                </button>
-                                                            </div>
-                                                        </figcaption>
-                                                    </figure>
-                                                </article>
-                                            </div>
-                                            <!-- loop end here -->
-                                            <div class="col-lg-3 col-md-4">
-            
-                                                <article class="single_product">
-                                                    <figure>
-                                                        <div class="product_thumb">
-                                                            <a class="primary_img">
-                                                                <img src="assets/img/product/pngegg.png" alt=""></a>
-                                                            <div class="label_product">
-                                                                <span class="label_new">New</span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <figcaption class="product_content">
-                                                            <h6 class="brand"><a href="#">Brand: <span>Porterfield</span></a></h6>
-                                                            <h4 class="product_name"><a >Porterfield R4-S Break Pad
-                                                                Made fore korean cars</a></h4>
-                                                            <div class="price_box my-3"> 
-                                                                <span class="current_price">5,698 LE</span>
-                                                            </div>
-                                                            <h6 class="category">KIA Cerato (2013 - 2018) </h6>
-                                                            <p class="description">After-Market Assembly Brake Pad Rear Korean </p>
-                                                            <div class="addToCart mt-2">
-                                                                <button class="btn btn_favourite">
-                                                                    <img src="assets/img/icon/love.png" alt="">
-                                                                </button>
-                                                                <button class="btn btn_addToCart">
-                                                                    Add to cart
-                                                                </button>
-                                                            </div>
-                                                        </figcaption>
-                                                    </figure>
-                                                </article>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4">
-            
-                                                <article class="single_product">
-                                                    <figure>
-                                                        <div class="product_thumb">
-                                                            <a class="primary_img">
-                                                                <img src="assets/img/product/pngwing.png" alt=""></a>
-                                                            <div class="label_product">
-                                                                <span class="label_new">New</span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <figcaption class="product_content">
-                                                            <h6 class="brand"><a href="#">Brand: <span>Porterfield</span></a></h6>
-                                                            <h4 class="product_name"><a >Porterfield R4-S Break Pad
-                                                                Made fore korean cars</a></h4>
-                                                            <div class="price_box my-3"> 
-                                                                <span class="current_price">5,698 LE</span>
-                                                            </div>
-                                                            <h6 class="category">KIA Cerato (2013 - 2018) </h6>
-                                                            <p class="description">After-Market Assembly Brake Pad Rear Korean </p>
-                                                            <div class="addToCart mt-2">
-                                                                <button class="btn btn_favourite">
-                                                                    <img src="assets/img/icon/love.png" alt="">
-                                                                </button>
-                                                                <button class="btn btn_addToCart">
-                                                                    Add to cart
-                                                                </button>
-                                                            </div>
-                                                        </figcaption>
-                                                    </figure>
-                                                </article>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4">
-            
-                                                <article class="single_product">
-                                                    <figure>
-                                                        <div class="product_thumb">
-                                                            <a class="primary_img">
-                                                                <img src="assets/img/product/SeekPng.png" alt=""></a>
-                                                            <div class="label_product">
-                                                                <span class="label_new">New</span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <figcaption class="product_content">
-                                                            <h6 class="brand"><a href="#">Brand: <span>Porterfield</span></a></h6>
-                                                            <h4 class="product_name"><a >Porterfield R4-S Break Pad
-                                                                Made fore korean cars</a></h4>
-                                                            <div class="price_box my-3"> 
-                                                                <span class="current_price">5,698 LE</span>
-                                                            </div>
-                                                            <h6 class="category">KIA Cerato (2013 - 2018) </h6>
-                                                            <p class="description">After-Market Assembly Brake Pad Rear Korean </p>
-                                                            <div class="addToCart mt-2">
-                                                                <button class="btn btn_favourite">
-                                                                    <img src="assets/img/icon/love.png" alt="">
-                                                                </button>
-                                                                <button class="btn btn_addToCart">
-                                                                    Add to cart
-                                                                </button>
-                                                            </div>
-                                                        </figcaption>
-                                                    </figure>
-                                                </article>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4">
-            
-                                                <article class="single_product">
-                                                    <figure>
-                                                        <div class="product_thumb">
-                                                            <a class="primary_img">
-                                                                <img src="assets/img/product/pngwing2.png" alt=""></a>
-                                                            <div class="label_product">
-                                                                <span class="label_new">New</span>
-                                                            </div>
-                                                            
-                                                            
-                                                        </div>
-                                                        <figcaption class="product_content">
-                                                            <h6 class="brand"><a href="#">Brand: <span>Porterfield</span></a></h6>
-                                                            <h4 class="product_name"><a >Porterfield R4-S Break Pad
-                                                                Made fore korean cars</a></h4>
-                                                            <div class="price_box my-3"> 
-                                                                <span class="current_price">5,698 LE</span>
-                                                            </div>
-                                                            <h6 class="category">KIA Cerato (2013 - 2018) </h6>
-                                                            <p class="description">After-Market Assembly Brake Pad Rear Korean </p>
-                                                            <div class="addToCart mt-2">
-                                                                <button class="btn btn_favourite">
-                                                                    <img src="assets/img/icon/love.png" alt="">
-                                                                </button>
-                                                                <button class="btn btn_addToCart">
-                                                                    Add to cart
-                                                                </button>
-                                                            </div>
-                                                        </figcaption>
-                                                    </figure>
-                                                </article>
-                                            </div>
-                                                    
-                                        </div>        
-                                    </div>  
-                                </div>
-        
-                            </div>
-        
-                            <div class="shop_toolbar t_bottom d-flex justify-content-between">
-                                <div class="page_amount">
-                                    <p>Showing 1–9 of 21 results</p>
-                                </div>
-                                <div class="pagination">
-                                    <ul>
-                                        <li><a href="#"><<</a></li>
-                                        <li class="prev"><a href="#">prev</a></li>
-        
-                                        <li class="current">1</li>
-        
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li class="next"><a href="#">next</a></li>
-                                        <li><a href="#">>></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--shop toolbar end-->
-                            <!--shop wrapper end-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--shop  area end-->
+            </section>
 
             <!--footer area start-->
             <footer class="footer_widgets">
                 <div class="footer_top">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="widget_inner" >
+
+                            <div class="widget_list widget_categories">
+                                <ul>
+                                    <li class="widget_sub_categories sub_categories1"><a href="javascript:void(0)" class="">Our offers</a>
+                                        <ul class="widget_dropdown_categories dropdown_categories1" style="display: none;">
+                                            <li><a href="#">Specials</a></li>
+                                            <li><a href="#">New products</a></li>
+                                            <li><a href="#">Bestsellers</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                                
+                                        </ul>
+                                    </li>
+                                    <li class="widget_sub_categories sub_categories2"><a href="javascript:void(0)">INFORMATION</a>
+                                        <ul class="widget_dropdown_categories dropdown_categories2">
+                                                <li><a>Delivery</a></li>
+                                                <li><a href="#">Legal Notice</a></li>
+                                                <li><a href="#">Terms and conditions of use</a></li>
+                                                <li><a href="#">Sales and Refunds</a></li>
+                                                <li><a href="#">About us </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="widget_sub_categories sub_categories2"><a href="javascript:void(0)">MY ACCOUNT</a>
+                                        <ul class="widget_dropdown_categories dropdown_categories3">
+                                                <li><a href="#">My orders</a></li>
+                                                <li><a href="#">Payment</a></li>
+                                                <li><a href="#">My addresses</a></li>
+                                                <li><a href="#">My cars</a></li>
+                                                <li><a href="#">My personal info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="widget_sub_categories sub_categories3"><a href="javascript:void(0)">CONTACT US</a>
+                                        <ul class="widget_dropdown_categories dropdown_categories4">
+                                            <div class="widgets_container contact_us">
+                                                <p><span>Address:</span> 55 El-Hussein, Ad Doqi, Dokki, Giza Government, Egypt</p>
+                                                <p><span>Email:</span> <a href="mailto:sales@yourcompany.com">sales@yourcompany.com
+                                               </a></p>
+                                                <p><span>Tel:</span> <a href="tel:0111-012-0316">0111-012-0316</a> </p>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row footer_top--text" >
                             
                             <div class="col-lg-3 col-md-3 col-sm-4">
                                 <div class="widgets_container widget_menu">
@@ -788,7 +571,6 @@
                                             <li><a href="#">New products</a></li>
                                             <li><a href="#">Bestsellers</a></li>
                                             <li><a href="#">Contact us</a></li>
-                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -841,6 +623,38 @@
                                  </div>
                             </div>
                         </div>
+                        <div class="row justify-content-between align-items-end">
+                            <!-- <div class="col-12">
+                                <img src="assets/img/bg/shipping_area.png" class="w-100" alt="">
+                            </div> -->
+                            <div class="col-lg-6">
+                                <div class="footer_widgets--content">
+                                    <p>Coming soon on</p>
+                                    <div class="row align-items-center justify-content-between footer_widgets--content-row">
+                                        <div class="col-lg-7">
+                                            <h4>All services in one place</h4>
+                                        </div>
+
+                                        <div class="col-lg-5 d-flex images__container align-items-end">
+                                            <div class="images d-flex align-items-end">
+                                                <img src="assets/img/icon/google.png" alt="">
+                                                <img src="assets/img/icon/apple.png" alt="">
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <ul class="list-unstyled footer_widgets--ul">
+                                    <li><a href=""><img  src="assets/img/icon/facebook.png" alt=""></a></li>
+                                    <li><a href=""><img  src="assets/img/icon/instgram.png" alt=""></a></li>
+                                    <li><a href=""><img  src="assets/img/icon/whatsapp.png" alt=""></a></li>
+                                    <li><a href=""><img  src="assets/img/icon/location.png" alt=""></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>  
                     </div>
                 </div>
                 <div class="container-fluid">
@@ -865,14 +679,13 @@
             <!--footer area end-->
         </section>
     </main>
-    
-    
+   
     <!-- modal area start-->
     <div class="modal fade" id="modal_box" tabindex="-1" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="icon-x"></i></span>
+                  <span aria-hidden="true"><i class="icon-x"></i></span>
                 </button>
                 <div class="modal_body">
                     <div class="container">
@@ -980,7 +793,9 @@
     </div>
     <!-- modal area end-->
 
+    
 
+    
 <!-- JS
 ============================================ -->
 <!--jquery min js-->
@@ -1013,14 +828,16 @@
 <script src="assets/js/tippy-bundle.umd.js"></script>
 <!-- Plugins JS -->
 <script src="assets/js/plugins.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
-
+<script>
+    $(".js-example-basic-multiple").select2();
+</script>
 
 
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/safira/safira/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Aug 2021 20:44:56 GMT -->
 </html>

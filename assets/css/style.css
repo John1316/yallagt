@@ -1842,4 +1842,10 @@ footer .section_title_border h4::after {
   background: #F25E3D;
   border-radius: 16px;
   width: 100%;
+}
+
+.forms input, .forms select {
+  background: rgba(217, 217, 217, 0.01);
+  border: 2px solid #D9D9D9;
+  border-radius: 16px;
 }/*# sourceMappingURL=style.css.map */
