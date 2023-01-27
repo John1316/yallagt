@@ -113,9 +113,6 @@ p {
   }
 }
 
-body {
-  font-family: "SF Pro Display";
-}
 @media screen and (min-width: 1600px) {
   body {
     background-color: #F5F5F7;
@@ -1530,6 +1527,42 @@ footer .section_title_border h4::after {
   border-radius: 0px 0px 16px 16px;
 }
 
+.choose {
+  padding: 40px 0;
+}
+.choose__card {
+  box-shadow: 4px 3px 16px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+.choose__card--btn {
+  border-radius: 4px;
+}
+.choose__card--brands {
+  box-shadow: 4px 3px 14px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  margin-bottom: 16px;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+}
+.choose__card--brands img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50px;
+  width: 60px;
+  margin: 0 auto;
+}
+.choose__card--brands p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 16px;
+}
 .chooseCarSection {
   background-color: #F5F5F7;
   padding: 47px 41px;
@@ -1549,4 +1582,264 @@ footer .section_title_border h4::after {
   text-transform: capitalize;
   color: #23272A;
   margin-bottom: 32px;
+}
+
+.section__header--h2 {
+  margin-top: 44px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.section__header--h2 span {
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.specifications {
+  padding: 30px 0 40px 0;
+}
+.specifications__image img {
+  border-radius: 16px;
+}
+.specifications__form--card {
+  margin-bottom: 24px;
+  background: rgba(245, 245, 246, 0.75);
+  border-radius: 16px;
+}
+.specifications__form--card:first-child {
+  margin-top: 40px;
+}
+.specifications__form--card-h5 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 24px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+}
+.specifications__form--card-h5 span {
+  font-weight: 500;
+  font-size: 20px !important;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #908E8E;
+}
+.specifications__form--card .form-check label {
+  font-weight: 700;
+  /* identical to box height */
+  font-size: 24px;
+  color: #000000;
+}
+.specifications__sidebar .image {
+  box-shadow: 4px 3px 14px -7px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+}
+.specifications__sidebar .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.specifications__sidebar h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.specifications__sidebar h6 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.specifications__sidebar--card {
+  background: #FFFFFF;
+  border: 1px solid rgba(221, 220, 220, 0.5);
+  box-shadow: 4px 3px 16px -6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.specifications__sidebar--card.seller h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.specifications__sidebar--card.seller h6 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.specifications__sidebar--card.seller .btn-third {
+  padding: 15px 38px;
+  border-radius: 16px;
+}
+.specifications__sidebar--card-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #F25E3D;
+}
+.specifications__sidebar--card-tags {
+  margin-top: 24px;
+}
+.specifications__sidebar--card-tags .badge {
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 12px 15.5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.specifications__card {
+  background: rgba(217, 217, 217, 0.05);
+  border: 2px solid #D9D9D9;
+  border-radius: 16px;
+}
+.specifications__card .card-body {
+  padding: 32px;
+}
+.specifications__card--icon {
+  padding: 5px;
+  background-color: #ebf1fc;
+  border-radius: 50%;
+  color: #78a7f7;
+}
+.specifications__card--h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+  color: #000000;
+  margin-bottom: 40px;
+}
+.specifications__card .title__row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #EDEBEB;
+}
+.specifications__card .title__row h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+}
+.specifications__card .title__row p {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.cars {
+  padding: 40px 0;
+}
+.cars__card {
+  background-color: #F5F5F5;
+  border: 1px solid #DDDCDC;
+  border-radius: 8px;
+}
+.cars__card .card-body {
+  padding: 40px 26px;
+}
+.cars__card--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cars__card--header .available {
+  color: #048C04;
+  font-size: 8px;
+  margin-right: 5px;
+}
+.cars__card--header .card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+}
+.cars__card--header .card-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.cars__card--image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+  height: 300px;
+  width: 100%;
+}
+.cars__card--type {
+  margin-bottom: 20px;
+}
+.cars__card--type .badge {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 15px 31px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+}
+.cars__card--specifications .badge {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+.cars__card--price {
+  margin-top: 48px;
+}
+.cars__card--price h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #23272A;
+  margin-bottom: 0;
+}
+.cars__card--price span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #908E8E;
+}
+.cars__card--price .btn-third {
+  background: #F25E3D;
+  border-radius: 16px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
