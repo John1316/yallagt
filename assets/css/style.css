@@ -1848,4 +1848,18 @@ footer .section_title_border h4::after {
   background: rgba(217, 217, 217, 0.01);
   border: 2px solid #D9D9D9;
   border-radius: 16px;
+}
+
+.specifications__image .show.active img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal_tab_button img {
+  height: 104px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */

@@ -2171,3 +2171,19 @@ width: 100%;
         border-radius: 16px;
     }
 }
+.specifications__image{
+    .show.active{
+        img{
+            height: 500px;
+            object-fit: contain;
+        }
+    }
+    
+}
+.modal_tab_button{
+    img{
+        height: 104px;
+        object-fit: contain;
+        object-position: center;
+    }
+}
