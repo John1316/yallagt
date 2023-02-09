@@ -2,7 +2,14 @@ $mainColor: #1DB954;
 $secondaryColor: #000000;
 $thirdColor: #F25E3D;
 $gray: #d5d5d5;
-$fontFamilySFProDisplay: 'SF Pro Display';
+$fontFamilySFProDisplay: 'SFProDisplay';
+@font-face {
+    font-family: SFProDisplay;
+    src: url('../fonts/SFPRODISPLAYREGULAR.OTF');
+  }
+  * {
+    font-family: SFProDisplay;
+  }
 // general css
 p{
     margin-bottom: 0;
@@ -21,14 +28,18 @@ p{
         h2{
             position: relative;
             &::after{
-        
+
                 content: "";
                 position: absolute;
                 left: 0;
-                bottom: -16.8px;
+                bottom: -18px;
                 width: 100%;
                 height: 2px;
                 background-color: $mainColor;
+                @media screen and (max-width: 450px) {
+                    bottom: -20px;
+
+                }
             }
         }
     }
@@ -97,14 +108,14 @@ p{
             &::before{
                 content: unset;
             }
-           
+
         }
     }
 }
 .widget_list.widget_categories > ul > li.widget_sub_categories > a{
     padding: 0;
 }
-.widget_list.widget_categories > ul > li.widget_sub_categories > a::before{    
+.widget_list.widget_categories > ul > li.widget_sub_categories > a::before{
     right: 0;
     width: 30px;
     display: flex;
@@ -112,14 +123,14 @@ p{
     align-items: center;
     background-color: #d5d5d5;
 }
-.widget_list.widget_categories > ul > li.widget_sub_categories > a.active::before{    
+.widget_list.widget_categories > ul > li.widget_sub_categories > a.active::before{
     right: 0;
 }
 
 // main content
 .main_content{
     @media screen and (min-width: 1600px) {
-        
+
         max-width: 1440px;
         margin: 0px auto;
         background-color: #fff;
@@ -138,7 +149,7 @@ body{
 }
 // header
 header{
-    
+
         background-color: #fff;
     .main_header{
         @media screen and (max-width:767px) {
@@ -189,7 +200,7 @@ header{
         &_middle{
             @media only screen and (max-width: 810px)
             {
-                margin-bottom: 0;              
+                margin-bottom: 0;
             }
             .logo{
                 a{
@@ -245,7 +256,7 @@ header{
                         }
                         p{
                             font-size: 20px;
-    
+
                         }
                     }
                 }
@@ -292,11 +303,9 @@ header{
             font-size: 16px;
             line-height: 19px;
             /* identical to box height */
-            
-            text-transform: uppercase;
-            
-            color: #000000;
 
+            text-transform: uppercase;
+            color: #000000;
         }
         p{
             font-weight: 700;
@@ -357,7 +366,7 @@ margin-bottom: 0;
 
         .single_category{
             background: #F5F5F5;
-            border-radius: 8px;            
+            border-radius: 8px;
             padding: 15px;
         }
 
@@ -365,7 +374,7 @@ margin-bottom: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
             img{
                 width: 100% !important;
                 height: 120px;
@@ -401,7 +410,7 @@ margin-bottom: 0;
 
 
         }
-    
+
 }
 // category section
 .category_section{
@@ -409,7 +418,7 @@ margin-bottom: 0;
 
         .single_category{
             border: 3px solid #D6D4D4;
-            
+
             padding: 15px;
         }
 
@@ -417,7 +426,7 @@ margin-bottom: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
             img{
                 width: 100% !important;
                 height: 120px;
@@ -453,7 +462,7 @@ margin-bottom: 0;
 
 
         }
-    
+
 }
 // product carousal{
 .product_deals{
@@ -466,6 +475,10 @@ margin-bottom: 0;
             border-right: 1.5px solid #D6D4D4;
             border-bottom: 3px solid #D6D4D4;
             padding: 15px;
+            figure{
+                min-height: 450px;
+            }
+
         }
         .owl-item.last .single_product{
             border: 3px solid #D6D4D4;
@@ -496,6 +509,11 @@ margin-bottom: 0;
             }
         }
         .product_content{
+            h4{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
             .current_price{
                 border: 1px solid #D6D4D4;
                     border-radius: 16px;
@@ -512,6 +530,10 @@ margin-bottom: 0;
                 font-family: $fontFamilySFProDisplay;
                 font-size: 17px;
                 line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
             }
             .title{
                 font-family: $fontFamilySFProDisplay;
@@ -544,7 +566,7 @@ margin-bottom: 0;
         }
     }
 }
-// brand carousal 
+// brand carousal
 .brand{
     &_area{
         padding: 0 0 1rem 0;
@@ -559,9 +581,9 @@ margin-bottom: 0;
         border: none;
         padding: 0;
     }
-    
+
 }
-// 
+//
 .car_breaks{
     .slick{
         &-vertical{
@@ -593,8 +615,14 @@ margin-bottom: 0;
     }
     &_carousel{
         .product_items{
+            .primary_img{
+                img{
+                    height: 100px;
+                    object-fit: contain;
+                }
+            }
             .single_product{
-                padding: 15px 0;
+                padding: 13px 0;
 
                 border: 3px solid $gray;
                 .product_name{
@@ -619,7 +647,7 @@ margin-bottom: 0;
                 .price_box{
                     opacity: 1 !important;
                     span{
-    
+
                         border: 1px solid #D6D4D4;
                         border-radius: 16px;
                         padding: 5px;
@@ -654,7 +682,7 @@ footer{
                 font-size: 20px;
 
             }
-            
+
         }
     }
 }
@@ -685,7 +713,7 @@ footer{
                 @media screen and (max-width:810px) {
                     margin-bottom: 10px;
                 }
-            
+
             }
             .images__container {
                 @media screen and (max-width:810px) {
@@ -733,7 +761,7 @@ footer{
     hr{
         background-color: #E0DEDE;
     }
-    .footer_bottom{ 
+    .footer_bottom{
         p{
             color: #000000;
         }
@@ -741,27 +769,27 @@ footer{
         background-color: #F5F5F7;
 
     }
-    .section_title {
-        &_border{
-            h4{
+    // .section_title {
+    //     &_border{
+    //         h4{
 
-                position: relative;
-                font-size: 20px;
-                font-weight: 400;
-                text-transform: uppercase;
-                display: inline-block;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -24.8px;
-                    width: 100%;
-                    height: 2.5px;
-                    background-color: $mainColor;
-                }
-            }
-        }
-    }
+    //             position: relative;
+    //             font-size: 20px;
+    //             font-weight: 400;
+    //             text-transform: uppercase;
+    //             display: inline-block;
+    //             &::after{
+    //                 content: "";
+    //                 position: absolute;
+    //                 left: 0;
+    //                 bottom: -24.8px;
+    //                 width: 100%;
+    //                 height: 2.5px;
+    //                 background-color: $mainColor;
+    //             }
+    //         }
+    //     }
+    // }
 
 }
 .slider_section{
@@ -781,7 +809,14 @@ footer{
     .single_product{
         border: 3px solid #D6D4D4;
         padding: 15px;
-
+        figure{
+            min-height: 450px;
+            .description , .product_name , .brand , .category{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
     }
 
     .product_thumb{
@@ -882,7 +917,7 @@ footer{
     }
 }
 
-// 
+//
 .car_breaks_shop{
     .slick{
         &-vertical{
@@ -940,7 +975,7 @@ footer{
                 .price_box{
                     opacity: 1 !important;
                     span{
-    
+
                         border: 1px solid #D6D4D4;
                         border-radius: 16px;
                         padding: 5px;
@@ -987,7 +1022,7 @@ footer{
                 margin: 0 auto;
                 height: 120px;
                 object-fit: contain;
-            
+
             }
             h5{
                 margin-top: 15px;
@@ -1021,12 +1056,12 @@ footer{
                             object-fit: contain;
                         }
                     }
-    
-                } 
-                
-            } 
-    
-        } 
+
+                }
+
+            }
+
+        }
     }
     .product_d_right{
         span{
@@ -1065,7 +1100,7 @@ footer{
             font-size: 25px;
             line-height: 48px;
             /* identical to box height */
-            
+
             color: #fff;
             background: #F25E3D;
             padding: 10px 19px;
@@ -1116,7 +1151,7 @@ footer{
                 border: 1px solid #ced4da;
                 width: 40px;
                 background: rgba(217, 217, 217, 0.25);
-            
+
             }
 
         }
@@ -1129,12 +1164,12 @@ footer{
                 &.collapsed{
                     background-color: #000000;
                     color: #fff;
-                    
+
                 }
             }
         }
 
-    } 
+    }
 }
 .providing{
     .card{
@@ -1250,7 +1285,7 @@ footer{
             font-weight: 400;
             font-size: 48px;
             line-height: 57px;
-            
+
             color: #23272A;
             span{
                 font-weight: 700;
@@ -1328,7 +1363,7 @@ footer{
             background-color: $mainColor;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);            
+            transform: translateY(-50%);
             margin-left: 20px;
         }
     }
@@ -1345,16 +1380,16 @@ footer{
         font-weight: 400;
         font-size: 40px;
         line-height: 48px;
-        
-        color: #23272A;    
+
+        color: #23272A;
     }
-    
+
     &__h6{
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
-        
-        color: #23272A;    
+
+        color: #23272A;
     }
 
     &__p{
@@ -1399,7 +1434,7 @@ footer{
             height: 3px;
             width: 80px;
             background-color: $mainColor;
-           
+
             margin-left: 20px;
         }
         .type{
@@ -1423,7 +1458,7 @@ footer{
             }
             &__body{
                 background-color: #F5F5F7;
-                
+
                 &--rectangle{
                     width: 150px;
                     height: 30px;
@@ -1453,7 +1488,7 @@ footer{
                         border: 1px solid;
                         border-radius: 100%;
                         padding: 3px;
-    
+
                     }
                 }
             }
@@ -1465,10 +1500,10 @@ footer{
                     line-height: 19px;
                     color: #000000;
                     margin: 20px 0;
-                    
+
                 }
             }
-            
+
         }
     }
 }
@@ -1481,13 +1516,13 @@ footer{
         font-size: 32px;
         line-height: 39px;
         color: #23272A;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         span{
             font-weight: 700;
         }
     }
 }
-// Banner service prices 
+// Banner service prices
 .services__banner{
     padding: 100px 0;
     position: relative;
@@ -1504,7 +1539,7 @@ footer{
             background-color: #fff;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);            
+            transform: translateY(-50%);
             margin-left: 20px;
         }
     }
@@ -1512,7 +1547,7 @@ footer{
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
-        
+
         color: #FFFFFF;
     }
     &--button{
@@ -1630,7 +1665,7 @@ footer{
                 &:first-child{
                     .nav-link{
 
-                        border-radius: 16px 0px 0px 16px;                    
+                        border-radius: 16px 0px 0px 16px;
                     }
                 }
                 &:last-child{
@@ -1643,7 +1678,7 @@ footer{
                     border: 2px solid #DDDCDC;
                     padding: 6px 24px;
                     font-size: 20px;
-                    
+
                     &.active{
                         background: #1DB954;
                         border: 2px solid #1DB954 !important;
@@ -1674,7 +1709,7 @@ footer{
         }
         &--dropdowns{
             margin-bottom: 34px;
-            button{
+            select{
                 background-color: #F5F5F5;
                 border-radius: 8px;
                 font-weight: 500;
@@ -1686,7 +1721,9 @@ footer{
 
                 color: #000000;
                 border: none;
-                padding:12px 36.5px ;
+                padding:0 8px ;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
         &--card{
@@ -1743,8 +1780,8 @@ footer{
                     font-size: 16px;
                     line-height: 19px;
                     /* identical to box height */
-                    
-                    
+
+
                     color: #000000;
                 }
                 &-h6{
@@ -1758,36 +1795,31 @@ footer{
                 }
             }
             &-accordion{
-                button{
+                a{
                     background: #F4F2F2;
                     padding: 14px 28px;
                     box-shadow: none !important;
-                    border: none;
                     border-bottom:  3px solid #EDEBEB;
                     display: flex;
                     justify-content: space-between;
+                    &-header{
+                        padding: 0;
+                    }
+                    &:last-child{
+                        border: none;
+                        border-radius: 0px 0px 16px 16px;
+                    }
                     p{
                         font-family: 'SF Pro Display';
                         font-weight: 700;
                         font-size: 18px;
                         line-height: 21px;
                         color: #23272A;
-                        &:first-child{
-                            text-decoration-line: underline;
-                        }
+                        text-decoration-line: underline;
                         @media screen and (max-width: 500px) {
                             font-size: 14px;
                         }
 
-                    }
-                }
-                .card{
-                    border: none;
-                    &-header{
-                        padding: 0;
-                    }
-                    &:last-child{
-                        border-radius: 0px 0px 16px 16px;
                     }
                 }
             }
@@ -1837,6 +1869,9 @@ footer{
         &__content{
             &--h5{
                 width: 40%;
+                @media screen and (max-width: 450px) {
+                    width: 100%;
+                }
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 38px;
@@ -1927,6 +1962,20 @@ footer{
         }
     }
     &__sidebar{
+        &--logo{
+            width: 112px;
+            height: 112px;
+            background-color: #fff;
+            box-shadow: 0px 6px 5px #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 90%;
+                height: 90%;
+            }
+        }
         .image{
             box-shadow: 4px 3px 14px -7px rgba(0, 0, 0, 0.25);
             border-radius: 16px;
@@ -2126,7 +2175,7 @@ footer{
                 padding: 15px;
                 font-weight: 500;
                 font-size: 12px;
-                
+
                 line-height: 19px;
                 /* identical to box height */
                 text-transform: uppercase;
@@ -2141,7 +2190,7 @@ footer{
                 font-size: 32px;
                 line-height: 38px;
                 text-transform: uppercase;
-                
+
                 color: #23272A;
                 margin-bottom: 0;
             }
@@ -2178,7 +2227,7 @@ width: 100%;
             object-fit: contain;
         }
     }
-    
+
 }
 .modal_tab_button{
     img{
